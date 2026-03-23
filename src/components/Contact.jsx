@@ -101,7 +101,7 @@ export default function Contact() {
                     <option value="">Select a service</option>
                     <option value="Removals Support">Removals Support</option>
                     <option value="Property Clearance">Property Clearance</option>
-                    <option value="Site Work & General Labour">Site Work & General Labour</option>
+                    <option value="Construction & Site Labour">Construction & Site Labour (Demolition)</option>
                     <option value="Short-Notice Labour Cover">Short-Notice Labour Cover</option>
                     <option value="Health & Safety Consultancy">Health & Safety Consultancy</option>
                     <option value="Drone Surveying">Drone Surveying</option>
