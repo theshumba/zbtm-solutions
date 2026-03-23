@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e2ec;
+  --color-navy-200: #bcccdc;
+  --color-navy-300: #9fb3c8;
+  --color-navy-400: #829ab1;
+  --color-navy-500: #627d98;
+  --color-navy-600: #486581;
+  --color-navy-700: #334e68;
+  --color-navy-800: #243b53;
+  --color-navy-900: #102a43;
+  --color-navy-950: #0a1929;
+
+  --color-brand-50: #e6f0fa;
+  --color-brand-100: #b3d4f0;
+  --color-brand-200: #80b8e6;
+  --color-brand-300: #4d9cdc;
+  --color-brand-400: #2680d2;
+  --color-brand-500: #0a5eb5;
+  --color-brand-600: #084b91;
+  --color-brand-700: #06386d;
+  --color-brand-800: #042549;
+  --color-brand-900: #021225;
+
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade-in-up { animation: fade-in-up 0.7s ease-out forwards; }
+.animate-fade-in { animation: fade-in 0.6s ease-out forwards; }
+.animate-slide-in-left { animation: slide-in-left 0.7s ease-out forwards; }
+.animate-slide-in-right { animation: slide-in-right 0.7s ease-out forwards; }
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+.animate-on-scroll { opacity: 0; }
+.animate-on-scroll.visible { opacity: 1; }
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0a1929 0%, #102a43 40%, #0a5eb5 100%);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(10, 94, 181, 0.15);
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
